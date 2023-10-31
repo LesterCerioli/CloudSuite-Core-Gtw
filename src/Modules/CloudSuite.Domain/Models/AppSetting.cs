@@ -13,7 +13,7 @@ namespace CloudSuite.Domain.Models
     {
         public AppSetting(Guid id)
         {
-            id = id;
+            Id = id;
         }
 
         [Required(ErrorMessage = "The {0} field is required.")]

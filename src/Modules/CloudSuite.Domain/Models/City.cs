@@ -13,7 +13,7 @@ namespace CloudSuite.Domain.Models
         private readonly List<State> _states;
 
         public City(Guid id) {
-            id = id;
+            StateId = id;
             _states = new List<State>();
         }
 
