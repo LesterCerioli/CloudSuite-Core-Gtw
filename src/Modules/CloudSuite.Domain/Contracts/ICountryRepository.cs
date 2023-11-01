@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using CloudSuite.Domain.Models;
 
-namespace CloudSuite.Modules.Core.Domain.Contracts
+namespace CloudSuite.Domain.Contracts
 {
     public interface ICountryRepository
     {

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using CloudSuite.Domain.Models;
 using CloudSuite.Domain.ValueObjects;
 
-namespace CloudSuite.Modules.Core.Domain.Contracts
+namespace CloudSuite.Domain.Contracts
 {
     public interface IUserRepository
     {
