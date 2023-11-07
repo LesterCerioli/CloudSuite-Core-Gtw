@@ -1,4 +1,5 @@
 using NetDevPack.Domain;
+using CloudSuite.Domain.ValueObjects;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -14,7 +15,7 @@ namespace CloudSuite.Domain.Models
             AddressId = id;
             Cnpj = cnpj;
             FantasyName = fantasyName;
-            registerName = registerName;
+            RegisterName = registerName;
             Address = address;
         }
 

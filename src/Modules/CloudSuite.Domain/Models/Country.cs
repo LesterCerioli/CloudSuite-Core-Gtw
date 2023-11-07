@@ -14,7 +14,7 @@ namespace CloudSuite.Domain.Models
 
         public Country(Guid id, string? countryName, string? code3, bool? isBillingEnabled, bool? isShippingEnabled, bool? isCityEnabled, bool? isZipCodeEnabled, bool? isDistrictEnabled)
         {
-            CountryId = id;
+            Id = id;
             CountryName = countryName;
             Code3 = code3;
             IsBillingEnabled = isBillingEnabled;
@@ -49,6 +49,6 @@ namespace CloudSuite.Domain.Models
 
         public IReadOnlyCollection<State> States => _states.AsReadOnly();
 
-        public Guid CountryId { get; private set; }
+        public Guid StateId { get; private set; }
     }
 }

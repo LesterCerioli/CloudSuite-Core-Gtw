@@ -15,7 +15,7 @@ namespace CloudSuite.Domain.Models
         private readonly List<City> _cities = new List<City>();
 
         public Address(Guid id) {
-            DistrictId = id;
+            Id = id;
             _districts = new List<District>();
             _cities = new List<City>();
         }
