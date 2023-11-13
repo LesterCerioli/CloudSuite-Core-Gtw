@@ -1,8 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using CloudSuite.Domain.Models;
 
 namespace CloudSuite.Domain.Contracts
@@ -13,7 +8,7 @@ namespace CloudSuite.Domain.Contracts
 
         Task<Media> GetByFileName(string fileName);
 
-        Task<Media> GetByFileSize(int fileSize);
+        Task<Media> GetByFileSize(int? fileSize);
 
         Task<IEnumerable<Media>> GetList();
 
@@ -22,6 +17,5 @@ namespace CloudSuite.Domain.Contracts
         void Update(Media media);
 
         void Remove(Media media);
-         
     }
 }

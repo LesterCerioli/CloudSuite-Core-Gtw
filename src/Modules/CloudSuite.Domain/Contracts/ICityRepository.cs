@@ -1,8 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using CloudSuite.Domain.Models;
 
 namespace CloudSuite.Domain.Contracts
@@ -18,6 +13,6 @@ namespace CloudSuite.Domain.Contracts
         void Update(City city);
 
         void Remove(City city);
-        
+         
     }
 }

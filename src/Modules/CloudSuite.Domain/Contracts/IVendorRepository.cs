@@ -1,8 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using CloudSuite.Domain.Models;
 using CloudSuite.Domain.ValueObjects;
 
@@ -14,7 +9,7 @@ namespace CloudSuite.Domain.Contracts
 
         Task<Vendor> GetByName(string name);
         
-        Task<Vendor> GetByCreationDate(DateTimeOffset creationDate);
+        Task<Vendor> GetByCreationDate(DateTimeOffset? creationDate);
 
         Task<IEnumerable<Vendor>> GetList();
 
@@ -23,6 +18,5 @@ namespace CloudSuite.Domain.Contracts
         void Update(Vendor vendor);
 
         void Remove(Vendor vendor);
-
     }
 }
