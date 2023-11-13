@@ -1,0 +1,25 @@
+name: Cloud Suite Core CI & CD
+
+on:
+  push:
+    branches: [ develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  
+  build:
+    runs-on: ubuntu-latest
+    steps:  
+    - uses: actions/checkout@v2
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 6.0.x
+    - name: Restore dependencies
+      run: dotnet restore ./CloudSuiteCore.sln
+    - name: Build
+      run: dotnet build ./CloudSuiteCore.sln
+    - name: Test
+      run: dotnet test ./CloudSuiteCore.sln
+  
